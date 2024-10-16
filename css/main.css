@@ -1114,7 +1114,7 @@ header ul .cart p span {
 ========================= */
 
 .progress-section {
-    background: url('/img/bg-5.jpg');
+    background-image: url("../img/bg-5.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1271,6 +1271,10 @@ header ul .cart p span {
     .glider-button-2 {
         display: none !important;
     }
+}
+
+.customer-section .dots-2 .glider-dot.active {
+    background: #42be42 !important;
 }
 
 /* ======================= 
@@ -1479,7 +1483,8 @@ header ul .cart p span {
 }
 
 .dots-3 .glider-dot.active {
-    color: #cc4b1c !important;
+        background: #42be42 !important;
+    
 }
 
 @media (max-width: 600px) {
