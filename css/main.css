@@ -980,6 +980,7 @@ header ul .cart-shown a i {
     padding: 0px 10px;
     display: inline-block;
     margin-right: -5px;
+    cursor: pointer;
 }
 
 .product-box .product-content .details i {
@@ -991,6 +992,7 @@ header ul .cart-shown a i {
     border-radius: 100%;
     margin-top: -5px;
     border: 1px solid transparent;
+    cursor: pointer;
     transition: .3s linear;
 }
 
@@ -1613,6 +1615,7 @@ header ul .cart-shown a i {
 
 footer {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 footer .footer-section {
