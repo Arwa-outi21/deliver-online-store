@@ -63,155 +63,166 @@ new Swiper('.card-wrapper',
         }
     });
 
-new Glider(document.querySelector('.glider-1'), {
-    slidesToScroll: 1,
-    slidesToShow: 4,
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-    },
-    responsive: [
-        {
-            // screens greater than >= 775px
-            breakpoint: 1200,
-            settings: {
-                // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 4,
-                slidesToScroll: 2,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 900,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 660,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 304,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 0,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
+document.addEventListener('DOMContentLoaded', function () {
+    const gliderElement1 = document.querySelector('.glider-1');
+    const gliderElement2 = document.querySelector('.glider-2');
+    const gliderElement3 = document.querySelector('.glider-3');
+
+    if (gliderElement1 || gliderElement2 || gliderElement3) {
+        new Glider(document.querySelector('.glider-1'), {
+            slidesToScroll: 1,
+            slidesToShow: 4,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 1200,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 304,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+        new Glider(document.querySelector('.glider-2'), {
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            draggable: true,
+            dots: '.dots-2',
+            arrows: {
+                prev: '.glider-prev-2',
+                next: '.glider-next-2'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 1200,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 304,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+        new Glider(document.querySelector('.glider-3'), {
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            draggable: true,
+            dots: '.dots-3',
+            arrows: {
+                prev: '.glider-prev-3',
+                next: '.glider-next-3'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 1200,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 304,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    }
 });
 
-new Glider(document.querySelector('.glider-2'), {
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    draggable: true,
-    dots: '.dots-2',
-    arrows: {
-        prev: '.glider-prev-2',
-        next: '.glider-next-2'
-    },
-    responsive: [
-        {
-            // screens greater than >= 775px
-            breakpoint: 1200,
-            settings: {
-                // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 3,
-                slidesToScroll: 2,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 900,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 660,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 304,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 0,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
-});
 
-new Glider(document.querySelector('.glider-3'), {
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    draggable: true,
-    dots: '.dots-3',
-    arrows: {
-        prev: '.glider-prev-3',
-        next: '.glider-next-3'
-    },
-    responsive: [
-        {
-            // screens greater than >= 775px
-            breakpoint: 1200,
-            settings: {
-                // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 3,
-                slidesToScroll: 2,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 900,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 660,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 304,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }, {
-            // screens greater than >= 1024px
-            breakpoint: 0,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
-});
+
 
 
 const filterButtons = document.querySelectorAll('.popular-menu li');
@@ -224,7 +235,7 @@ const filterCards = e => {
     filterableCards.forEach(card => {
         card.classList.add('hide')
 
-        if (card.dataset.name ===  e.target.dataset.name || e.target.dataset.name === "all") {
+        if (card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all") {
             card.classList.remove('hide');
         }
     })
