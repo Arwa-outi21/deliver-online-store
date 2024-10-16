@@ -175,6 +175,29 @@ header ul .cart p span {
     color: #f1784c;
 }
 
+header ul .cart-shown {
+    font-size: 15px;
+    padding: 5px 8px;
+    transition: all .3s ease;
+}
+
+header ul .cart-shown:hover {
+    background-color: #99999959;
+}
+
+header ul .cart-shown a {
+    color: #1f1f1f;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul .cart-shown a i {
+    font-size: 12px;
+    color: #2c8f2c;
+}
+
 .dropdown-toggle::after {
     margin-top: 15px;
 }
@@ -1492,6 +1515,97 @@ header ul .cart p span {
         display: none !important;
     }
 }
+
+/* ======================= 
+         Cart 
+========================= */
+
+.cart-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.cart-section .cart-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cart-section .cart-heading h2 {
+    border-bottom: 2px dotted #1f1f1f;
+    padding: 10px 0px;
+    width: 30%;
+}
+
+.cart-section .cart-heading h2 span {
+    color: #2c8f2c;
+}
+
+.cart-section .cart-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-section .cart-products .cart-product {
+    border: #666 1px solid;
+    margin: 10px;
+    padding: 10px;
+    width: 270px;
+    border-radius: 20px;
+}
+
+.cart-section .cart-products .cart-product .img {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.cart-section .cart-products .cart-product .img img {
+    width: 100%;
+}
+
+.cart-section .cart-products .cart-product .product-info .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-section .cart-products .cart-product .product-info .title h3 {
+    font-size: 22px;
+}
+
+.cart-section .cart-products .cart-product .product-info .title span {
+    color: #cc4b1c;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: -1px;
+}
+
+
+.cart-section .cart-products .cart-product .product-info .remove-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: #99999959 1px solid;
+}
+
+.cart-section .cart-products .cart-product .product-info .remove-add .remove {
+    color: red;
+    cursor: pointer;
+}
+
+.cart-section .cart-products .cart-product .product-info .remove-add .add {
+    background-color: #3ab43a;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
 
 /* ======================= 
          Footer
