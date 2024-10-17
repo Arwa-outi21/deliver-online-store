@@ -529,6 +529,22 @@ header ul .cart-shown a i {
     padding: 40px 0px;
 }
 
+.categories-section .cata-sec-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: -20px;
+}
+
+.categories-section .cata-sec-heading .section-title {
+    display: flex;
+}
+
+.categories-section .cata-sec-heading .section-title h2 {
+    margin-right: 10px;
+}
+
 @media (max-width: 660px) {
     .categories-section .categories-header {
         flex-direction: column;
@@ -587,6 +603,17 @@ header ul .cart-shown a i {
     color: #1f1f1f;
     padding: 10px;
     border-radius: 100%;
+}
+
+.categories .cata-sec-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories .card-list .cata-sec-card {
+    margin: 5px;
+    width: 270px;
 }
 
 /* swiper */
